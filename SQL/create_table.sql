@@ -2,12 +2,12 @@ CREATE TABLE viagens.usuarios (
   id INT,
   nome VARCHAR(255) NOT NULL COMMENT 'Nome do usuário',
   email VARCHAR(255) NOT NULL UNIQUE COMMENT 'Endereço de e-mail do usuário',
-  data_nascimento DATE NOT NULL COMMENT 'Data de nascimento do usuário',
+  dataNascimento DATE NOT NULL COMMENT 'Data de nascimento do usuário',
   endereco VARCHAR(50) NOT NULL COMMENT 'Endereço do Cliente'
 );
 
 CREATE TABLE viagens.reservas (
-	  id INT COMMENT 'Identificador da reserva',
+	id INT COMMENT 'Identificador da reserva',
     idUsuario INT COMMENT 'Id de referência do usuário',
     idDestino INT COMMENT 'Id de referência do destino',
     dataReserva DATE,
@@ -15,7 +15,7 @@ CREATE TABLE viagens.reservas (
 )
 
 CREATE TABLE viagens.destinos (
-	  id INT,
+	id INT,
     nome VARCHAR(255) NOT NULL,
     descricao VARCHAR(255) NOT NULL
 )
