@@ -41,7 +41,7 @@ INSERT INTO viagens.destinos ( nome, descricao) VALUES
 ('Destino exemplo', 'Uma bela praia com areias brancas e mar cristalino')
 
 -- Inserir dados em massa --
-INSERT INTO usuarios (nome, email, data_nascimento, rua) VALUES
+INSERT INTO usuarios (nome, email, dataNascimento, rua) VALUES
 ('João Silva', 'joao.silva@example.com', '1990-01-01', 'Rua A'),
 ('Maria Santos', 'maria.santos@example.com', '1992-03-15', 'Rua B'),
 ('Pedro Almeida', 'pedro.almeida@example.com', '1985-07-10', 'Rua C'),
