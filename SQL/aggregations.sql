@@ -1,20 +1,28 @@
 -- Conta o número de registros
 SELECT COUNT(*) FROM usuarios;
 
+-- Conta usuarios com reservas -- 
+SELECT COUNT(*) as total_usuarios_com_reservas FROM usuarios us
+INNER JOIN reservas rs ON us.id = rs.id;
+
+-- Conta quantas reservas existem por destino --
+SELECT idDestino as qtd_reservas, COUNT(*) FROM reservas
+GROUP BY idDestino;
+
 -- Media da idade dos usuarios
 SELECT AVG(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS idade
 FROM usuarios;
 
 -- Soma da idade dos usuarios
-SELECT SUM(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS media_idade
+SELECT SUM(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS soma_idades
 FROM usuarios;
 
 -- Menor Idade
-SELECT MIN(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS media_idade
+SELECT MIN(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS menor_idade
 FROM usuarios;
 
 -- Maior Idade
-SELECT MAX(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS media_idade
+SELECT MAX(TIMESTAMPDIFF(YEAR, dataNascimento, CURRENT_DATE())) AS maior_idade
 FROM usuarios;
 
 -- Calcula quantidade de reservas por destino --
