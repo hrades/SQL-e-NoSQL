@@ -1,0 +1,38 @@
+[
+  {
+    "usuario": 1,
+    "destino": 201,
+    "data": "2024-03-10T09:00:00Z",
+    "status": "confirmada"
+  },
+  {
+    "usuario": 2,
+    "destino": 202,
+    "data": "2024-03-12T14:30:00Z",
+    "status": "pendente"
+  },
+  {
+    "usuario": 3,
+    "destino": 205,
+    "data": "2024-03-15T16:00:00Z",
+    "status": "confirmada"
+  },
+  {
+    "usuario": 1,
+    "destino": 203,
+    "data": "2024-04-01T11:00:00Z",
+    "status": "cancelada"
+  },
+  {
+    "usuario": 4,
+    "destino": 204,
+    "data": "2024-04-05T10:00:00Z",
+    "status": "confirmada"
+  },
+  {
+    "usuario": 5,
+    "destino": 201,
+    "data": "2024-04-10T08:30:00Z",
+    "status": "pendente"
+  }
+]
