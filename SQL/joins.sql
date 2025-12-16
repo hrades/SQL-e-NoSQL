@@ -1,0 +1,22 @@
+-- Traz apenas os usuario com reservas
+SELECT * FROM usuarios us
+INNER JOIN reservas rs
+	ON us.id = rs.id_usuario;
+
+-- Traz todos os usuario e suas reservas se tiver
+SELECT * FROM usuarios us
+INNER JOIN reservas rs
+	ON us.id = rs.id_usuario;
+
+INSERT INTO viagens.destinos ( nome, descricao) VALUES 
+('Deestino sem reserva', 'Uma bela praia com areias brancas e mar cristalino')
+
+-- Tras todos os destinos e as reservas se tiverem -- 
+SELECT * FROM reservas rs
+RIGHT JOIN destinos des
+	ON des.id = rs.id_destino;
+
+-- Produz o mesmo resultado que a anterior
+SELECT * FROM destinos des
+LEFT JOIN reservas rs
+	ON des.id = rs.id_destino;
