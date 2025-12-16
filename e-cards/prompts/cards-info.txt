@@ -1,0 +1,3 @@
+analise a imagem e retorne os principais dados que compõe uma carta pokemón
+
+generalize as informações para eu poder criar minhas próprias cartas

@@ -1,0 +1,22 @@
+-- Inserindo 20 novos Pokémon
+INSERT INTO tbl_cards (nome, hp, fraqueza, resistencia, custo_recuo, numero_colecao, collection_id, tipo_id, estagio_id) VALUES
+('Jigglypuff', 60, 'Metálico', 'Psíquico', '1 Incolor', 39, 1, 11, 1),
+('Machop', 70, 'Psíquico', 'Nenhum', '1 Incolor', 52, 1, 6, 1),
+('Magnemite', 50, 'Lutador', 'Metálico', '1 Incolor', 62, 1, 7, 1),
+('Eevee', 50, 'Lutador', 'Nenhum', '1 Incolor', 66, 1, 11, 1),
+('Dratini', 40, 'Gelo', 'Nenhum', '1 Incolor', 77, 1, 10, 1),
+('Snorlax', 100, 'Lutador', 'Psíquico', '4 Incolor', 11, 2, 11, 2),
+('Scyther', 70, 'Fogo', 'Lutador', '1 Incolor', 10, 2, 3, 1),
+('Kangaskhan', 90, 'Lutador', 'Nenhum', '3 Incolor', 5, 2, 11, 1),
+('Clefable', 80, 'Metálico', 'Psíquico', '2 Incolor', 1, 2, 9, 2),
+('Vaporeon', 80, 'Elétrico', 'Nenhum', '2 Incolor', 12, 2, 2, 2),
+('Kabuto', 60, 'Grama', 'Nenhum', '1 Incolor', 9, 3, 6, 1),
+('Aerodactyl', 90, 'Elétrico', 'Nenhum', '2 Incolor', 1, 3, 10, 2),
+('Ditto', 60, 'Lutador', 'Nenhum', '1 Incolor', 18, 3, 11, 1),
+('Muk', 80, 'Psíquico', 'Nenhum', '2 Incolor', 13, 3, 5, 2),
+('Lapras', 80, 'Elétrico', 'Nenhum', '2 Incolor', 10, 3, 2, 1),
+('Dark Charmeleon', 60, 'Água', 'Nenhum', '1 Incolor', 24, 4, 1, 2),
+('Dark Jolteon', 70, 'Lutador', 'Nenhum', '1 Incolor', 38, 4, 4, 2),
+('Dark Vileplume', 80, 'Fogo', 'Nenhum', '2 Incolor', 13, 4, 3, 2),
+('Dark Machamp', 100, 'Psíquico', 'Nenhum', '3 Incolor', 15, 4, 6, 3),
+('Dark Dragonair', 80, 'Fada', 'Nenhum', '2 Incolor', 33, 4, 10, 2);

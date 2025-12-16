@@ -1,0 +1,24 @@
+crie um script para fazer uma tabela em MySQL
+
+a primeira tabela deve ser para salvar informações de cartas 
+a segunda tabela deve conter as informações das coleções lançadas
+
+conecte as duas tabelas com uma chave estrangeira
+
+Primeira tabela:
+- id
+- Nome
+- Estágio
+- Tipo Elemental
+- HP
+- Ataques
+- Fraqueza
+- Resistência
+- Custo de Recuo
+- Número na coleção
+
+Segunda tabela:
+- id
+- Nome da coleção
+- Data de lançamento
+- Quantidade de cartas na coleção
