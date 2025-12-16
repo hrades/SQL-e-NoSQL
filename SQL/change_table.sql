@@ -40,3 +40,15 @@ ALTER TABLE reservas
 ADD CONSTRAINT fk_reservas_usuarios
 FOREIGN KEY (idUsuario) REFERENCES usuarios(id)
 ON DELETE CASCADE;
+
+-- Normalização de dados --
+-- Adicionar colunas de endereço à tabela "Usuarios"
+ALTER TABLE usuarios
+ADD rua VARCHAR(100),
+ADD numero VARCHAR(10),
+ADD cidade VARCHAR(50),
+ADD estado VARCHAR(50);
+
+-- Exclusão da coluna "endereco" da tabela original
+ALTER TABLE usuarios
+DROP COLUMN endereco;
