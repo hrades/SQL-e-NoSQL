@@ -36,3 +36,6 @@ VALUES ('Praia Teste', 'Destino paradisíaco com belas praias.');
 -- Inserção na tabela "reservas"
 INSERT INTO reservas (id_usuario, id_destino, data, status)
 VALUES (4, 4, '2023-07-01', 'pendente');
+
+INSERT INTO viagens.destinos ( nome, descricao) VALUES 
+('Destino exemplo', 'Uma bela praia com areias brancas e mar cristalino')
