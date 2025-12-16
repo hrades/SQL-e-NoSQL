@@ -16,3 +16,22 @@ SELECT * FROM usuarios WHERE id > 1 AND nome LIKE "%Maria%";
 -- Like
 SELECT * FROM usuarios WHERE nome LIKE '%Silva%';
 SELECT * FROM usuarios WHERE nome LIKE 'Jo_o%';
+
+-- SUb consultas
+
+-- Usuários que não fizeram nenhuma reserva
+SELECT nome
+FROM usuarios
+WHERE id NOT IN (SELECT idUsuario FROM reservas);
+
+-- Subconsulta para encontrar os destinos menos populares (com menos reservas):
+
+SELECT nome
+FROM destinos
+WHERE id NOT IN (SELECT idDestino FROM reservas)
+ORDER BY id;
+
+-- contagem de reservas por usuario
+
+SELECT nome, (SELECT COUNT(*) FROM reservas WHERE idUsuario = usuarios.id) AS total_reservas
+FROM usuarios;
