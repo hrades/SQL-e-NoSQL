@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 201,
+    "nome": "Parque Ibirapuera",
+    "descricao": "O mais importante parque urbano da cidade, com museus, auditórios e ampla área verde para lazer e esporte.",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [ -46.657634, -23.587416 ]
+    }
+  },
+  {
+    "_id": 202,
+    "nome": "Avenida Paulista",
+    "descricao": "O cartão-postal de São Paulo, polo cultural e econômico que abriga o MASP, shoppings e centros financeiros.",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [ -46.655900, -23.561400 ]
+    }
+  },
+  {
+    "_id": 203,
+    "nome": "Mercado Municipal de São Paulo",
+    "descricao": "Conhecido como Mercadão, é famoso pela variedade de frutas, temperos e pelo sanduíche de mortadela.",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [ -46.629400, -23.541900 ]
+    }
+  },
+  {
+    "_id": 204,
+    "nome": "Pinacoteca do Estado",
+    "descricao": "Um dos museus de arte mais importantes do Brasil, localizado no Jardim da Luz, com acervo focado na produção brasileira.",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [ -46.633900, -23.534400 ]
+    }
+  },
+  {
+    "_id": 205,
+    "nome": "Beco do Batman",
+    "descricao": "Galeria de arte a céu aberto na Vila Madalena, com muros cobertos de grafites que são renovados constantemente.",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [ -46.686700, -23.556400 ]
+    }
+  }
+]
