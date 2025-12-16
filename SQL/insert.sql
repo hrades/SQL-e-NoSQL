@@ -18,10 +18,9 @@ INSERT INTO viagens.reservas (id, idUsuario, idDestino, dataReserva, statusReser
 (4, 3, 3, '2023-09-20', 'cancelada');
 
 -- Migrando os dados --
-
--- INSERT INTO usuarios_nova (id, nome, email, endereco, dataNascimento)
--- SELECT id, nome email, dataNascimento
--- FROM usuarios;
+INSERT INTO usuarios_nova (id, nome, email, endereco, dataNascimento)
+SELECT id, nome, email, endereco, dataNascimento
+FROM usuarios;
 
 INSERT INTO usuarios_nova
 SELECT * from usuarios;
